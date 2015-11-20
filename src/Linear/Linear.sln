@@ -15,6 +15,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E59EEBD3
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit", "Unit", "{15D46023-5003-4434-9772-6075964FDFA7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{4811BE32-5708-4BF0-B924-8268B10E861C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linear.Relational.SqlServer.Tests.Integration", "Linear.Relational.SqlServer.Tests.Integration\Linear.Relational.SqlServer.Tests.Integration.csproj", "{C056A564-D7C9-4E46-B004-E24C50C0182B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linear.Relational.SqlServer.Tests.Unit", "Linear.Relational.SqlServer.Tests.Unit\Linear.Relational.SqlServer.Tests.Unit.csproj", "{7BD8AAF5-67F2-424A-A39F-5D0D602835ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +43,14 @@ Global
 		{CE0E70B8-D8D5-4D8A-B63B-FAEC81AF4EAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE0E70B8-D8D5-4D8A-B63B-FAEC81AF4EAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE0E70B8-D8D5-4D8A-B63B-FAEC81AF4EAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C056A564-D7C9-4E46-B004-E24C50C0182B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C056A564-D7C9-4E46-B004-E24C50C0182B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C056A564-D7C9-4E46-B004-E24C50C0182B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C056A564-D7C9-4E46-B004-E24C50C0182B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BD8AAF5-67F2-424A-A39F-5D0D602835ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BD8AAF5-67F2-424A-A39F-5D0D602835ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BD8AAF5-67F2-424A-A39F-5D0D602835ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BD8AAF5-67F2-424A-A39F-5D0D602835ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,5 +58,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{69BF4553-1172-4026-BA88-1CBB8AE00A33} = {15D46023-5003-4434-9772-6075964FDFA7}
 		{15D46023-5003-4434-9772-6075964FDFA7} = {E59EEBD3-BC5D-4A9D-8513-057699AE6E90}
+		{4811BE32-5708-4BF0-B924-8268B10E861C} = {E59EEBD3-BC5D-4A9D-8513-057699AE6E90}
+		{C056A564-D7C9-4E46-B004-E24C50C0182B} = {4811BE32-5708-4BF0-B924-8268B10E861C}
+		{7BD8AAF5-67F2-424A-A39F-5D0D602835ED} = {15D46023-5003-4434-9772-6075964FDFA7}
 	EndGlobalSection
 EndGlobal
