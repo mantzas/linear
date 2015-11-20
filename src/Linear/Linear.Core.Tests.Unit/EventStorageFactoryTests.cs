@@ -8,26 +8,31 @@ namespace Linear.Core.Tests.Unit
 {
     public class EventStorageFactoryTests
     {
+        private IEventRepository<string> _repository;
+        private IEventSerializer _serializer;
+
+        public EventStorageFactoryTests()
+        {
+            _repository = Substitute.For<IEventRepository<string>>();
+            _serializer = Substitute.For<IEventSerializer>();
+        }
+
         [Fact]
         public void CanConstruct_NullSerializer_Throws()
         {
-            var repository = Substitute.For<IEventRepository<string>>();
-            Assert.Throws<ArgumentNullException>("serializer", () => new EventStorageFactory<string>(null, repository));
+            Assert.Throws<ArgumentNullException>("serializer", () => new EventStorageFactory<string>(null, _repository));
         }
 
         [Fact]
         public void CanConstruct_NullRepository_Throws()
         {
-            var serializer = Substitute.For<IEventSerializer>();
-            Assert.Throws<ArgumentNullException>("repository", () => new EventStorageFactory<string>(serializer, null));
+            Assert.Throws<ArgumentNullException>("repository", () => new EventStorageFactory<string>(_serializer, null));
         }
 
         [Fact]
         public void CanCreate()
         {
-            var serializer = Substitute.For<IEventSerializer>();
-            var repository = Substitute.For<IEventRepository<string>>();
-            var storage = new EventStorageFactory<string>(serializer, repository).Create();
+            var storage = new EventStorageFactory<string>(_serializer, _repository).Create();
             storage.Should().NotBeNull();
         }
     }
