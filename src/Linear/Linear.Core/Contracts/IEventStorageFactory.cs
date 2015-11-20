@@ -1,7 +1,7 @@
 ﻿namespace Linear.Core.Contracts
 {
-    public interface IEventStorageFactory
+    public interface IEventStorageFactory<T> where T:class
     {
-        IEventStorage Create();
+        IEventStorage<T> Create();
     }
 }

@@ -1,7 +1,7 @@
 ﻿namespace Linear.Core.Contracts
 {
-    public interface IEventStorage
+    public interface IEventStorage<T> where T : class
     {
-        bool Append();
+        bool Append(IEvent<T> data);
     }
 }

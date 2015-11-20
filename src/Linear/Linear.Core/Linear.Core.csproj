@@ -45,8 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contracts\IEventRepository.cs" />
+    <Compile Include="Contracts\IEvent.cs" />
     <Compile Include="Contracts\IEventSerializer.cs" />
     <Compile Include="Contracts\IEventStorage.cs" />
+    <Compile Include="Event.cs" />
     <Compile Include="EventStorageFactory.cs" />
     <Compile Include="Contracts\IEventStorageFactory.cs" />
     <Compile Include="JsonEventSerializer.cs" />
