@@ -24,7 +24,9 @@ namespace Linear.Relational.SqlServer.Tests.Integration
 
         public IDbConnection OpenConnection()
         {
-            return new SqlConnection(ConnectionStringName);
+            var connection = new SqlConnection(ConnectionStringName);
+            connection.Open();
+            return connection;
         }
 
         private void CreateDatabase()
@@ -32,7 +34,7 @@ namespace Linear.Relational.SqlServer.Tests.Integration
             OutputFolder = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), DatabaseDirectory);
             var mdfFilename = string.Format("{0}.mdf", DatabaseName);
             DatabaseMdfPath = Path.Combine(OutputFolder, mdfFilename);
-            DatabaseLogPath = Path.Combine(OutputFolder, String.Format("{0}_log.ldf", DatabaseName));
+            DatabaseLogPath = Path.Combine(OutputFolder, string.Format("{0}_log.ldf", DatabaseName));
 
             // Create Data Directory If It Doesn't Already Exist.
             if (!Directory.Exists(OutputFolder))
@@ -41,25 +43,25 @@ namespace Linear.Relational.SqlServer.Tests.Integration
             }
 
             // If the database does not already exist, create it.
-            var connectionString = String.Format(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True");
+            var connectionString = string.Format(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True");
             using (var connection = new SqlConnection(connectionString))
             {
                 connection.Open();
                 var cmd = connection.CreateCommand();
                 DetachDatabase();
-                cmd.CommandText = String.Format("CREATE DATABASE {0} ON (NAME = N'{0}', FILENAME = '{1}')", DatabaseName, DatabaseMdfPath);
+                cmd.CommandText = string.Format("CREATE DATABASE {0} ON (NAME = N'{0}', FILENAME = '{1}')", DatabaseName, DatabaseMdfPath);
                 cmd.ExecuteNonQuery();
             }
 
             // Open newly created, or old database.
-            ConnectionStringName = String.Format(@"Data Source=(localdb)\MSSQLLocalDB;AttachDBFileName={1};Initial Catalog={0};Integrated Security=True;", DatabaseName, DatabaseMdfPath);
+            ConnectionStringName = string.Format(@"Data Source=(localdb)\MSSQLLocalDB;AttachDBFileName={1};Initial Catalog={0};Integrated Security=True;", DatabaseName, DatabaseMdfPath);
         }
 
         void DetachDatabase()
         {
             try
             {
-                var connectionString = String.Format(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True");
+                var connectionString = string.Format(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True");
                 using (var connection = new SqlConnection(connectionString))
                 {
                     connection.Open();

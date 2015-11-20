@@ -5,6 +5,12 @@ namespace Linear.Core
 {
     public class Event<T> : IEvent<T> where T : class
     {
+        private Event(Guid sourceId, string type, T payload, int version, DateTimeOffset created) : 
+            this(sourceId, type, payload, version)
+        {
+            Created = created;
+        }
+
         private Event(Guid sourceId, string type, T payload, int version)
         {
             if(sourceId == Guid.Empty)
@@ -33,6 +39,11 @@ namespace Linear.Core
         public static Event<T> Create(Guid sourceId, string type, T payload, int version = 0)
         {
             return new Event<T>(sourceId, type, payload, version);
+        }
+
+        public static Event<T> Create(Guid sourceId, string type, T payload, int version, DateTimeOffset created)
+        {
+            return new Event<T>(sourceId, type, payload, version, created);
         }
     }
 }

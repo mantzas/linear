@@ -60,7 +60,7 @@ namespace Linear.Relational.SqlServer
             {
                 var payload = _eventSerializer.Deserialize<T>(dbEvent.Payload);
 
-                events.Add(Event<T>.Create(dbEvent.SourceId, dbEvent.Type, payload, dbEvent.Version));
+                events.Add(Event<T>.Create(dbEvent.SourceId, dbEvent.Type, payload, dbEvent.Version, dbEvent.Created));
             }
 
             return events.ToArray();

@@ -13,12 +13,6 @@ namespace Linear.Relational.SqlServer.Tests.Integration
         }
 
         [Fact]
-        public void Constructor_NullConnectionString_Throws()
-        {
-            Assert.Throws<ArgumentException>("connectionString", () => new SqlServerConnectionFactory(null));
-        }
-
-        [Fact]
         public void Constructor_Throws()
         {
             var factory = new SqlServerConnectionFactory(_fixture.Db.ConnectionStringName);
