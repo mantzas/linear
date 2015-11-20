@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linear.Relational.SqlServer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linear.Relational.Core", "Linear.Relational.Core\Linear.Relational.Core.csproj", "{CE0E70B8-D8D5-4D8A-B63B-FAEC81AF4EAD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E59EEBD3-BC5D-4A9D-8513-057699AE6E90}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit", "Unit", "{15D46023-5003-4434-9772-6075964FDFA7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +40,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{69BF4553-1172-4026-BA88-1CBB8AE00A33} = {15D46023-5003-4434-9772-6075964FDFA7}
+		{15D46023-5003-4434-9772-6075964FDFA7} = {E59EEBD3-BC5D-4A9D-8513-057699AE6E90}
 	EndGlobalSection
 EndGlobal
