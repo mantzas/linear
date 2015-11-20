@@ -4,7 +4,6 @@ using Linear.Core.Contracts;
 using Linear.Relational.Core.Contracs;
 using Linear.Relational.Core;
 using System.Collections.Generic;
-using System.Linq;
 using Linear.Core;
 
 namespace Linear.Relational.SqlServer

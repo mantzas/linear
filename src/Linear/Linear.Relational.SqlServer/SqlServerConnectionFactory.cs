@@ -13,7 +13,7 @@ namespace Linear.Relational.SqlServer
         {
             if (string.IsNullOrWhiteSpace(connectionString))
             {
-                throw new ArgumentException("connection cannot be null or whitespace!", "connection");
+                throw new ArgumentException("Value cannot be null or whitespace!", "connectionString");
             }
 
             _connectionString = connectionString;
