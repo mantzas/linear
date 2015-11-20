@@ -5,9 +5,14 @@ namespace Linear.Core
 {
     public class Event<T> : IEvent<T> where T : class
     {
-        public Event(Enum type, T payload)
+        public Event(Guid id, Enum type, T payload)
         {
-            Id = Guid.NewGuid();
+            if(id == Guid.Empty)
+            {
+                throw new ArgumentException("Id cannot be empty!","id");
+            }
+
+            Id = id;
             Type = type;
             Payload = payload;
             Created = DateTimeOffset.UtcNow;

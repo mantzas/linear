@@ -81,6 +81,8 @@
   <ItemGroup>
     <Compile Include="EventStorageFactoryTests.cs" />
     <Compile Include="EventStorageTests.cs" />
+    <Compile Include="EventTests.cs" />
+    <Compile Include="InMemoryEventRepositoryTests.cs" />
     <Compile Include="JsonEventSerializerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
