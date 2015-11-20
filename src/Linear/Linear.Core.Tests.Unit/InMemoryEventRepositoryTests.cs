@@ -10,7 +10,7 @@ namespace Linear.Core.Tests.Unit
         public void Append_Success()
         {
             var repository = new InMemoryEventRepository<string>();
-            var data = Event<string>.Create(Guid.NewGuid(), DayOfWeek.Monday, "test");
+            var data = Event<string>.Create(Guid.NewGuid(), "type", "test");
             var result = repository.Append(data);
             result.Should().BeTrue();            
         }
@@ -20,11 +20,11 @@ namespace Linear.Core.Tests.Unit
         {
             var id = Guid.NewGuid();
             var repository = new InMemoryEventRepository<string>();
-            var data1 = Event<string>.Create(id, DayOfWeek.Monday, "test1");
-            var data2 = Event<string>.Create(id, DayOfWeek.Tuesday, "test2");
-            var data3 = Event<string>.Create(id, DayOfWeek.Wednesday, "test3");
-            var data4 = Event<string>.Create(id, DayOfWeek.Thursday, "test4");
-            var data5 = Event<string>.Create(id, DayOfWeek.Friday, "test5");
+            var data1 = Event<string>.Create(id, "type", "test1");
+            var data2 = Event<string>.Create(id, "type", "test2");
+            var data3 = Event<string>.Create(id, "type", "test3");
+            var data4 = Event<string>.Create(id, "type", "test4");
+            var data5 = Event<string>.Create(id, "type", "test5");
             var result1 = repository.Append(data1);
             var result2 = repository.Append(data2);
             var result3 = repository.Append(data3);
@@ -51,11 +51,11 @@ namespace Linear.Core.Tests.Unit
         {
             var id = Guid.NewGuid();
             var repository = new InMemoryEventRepository<string>();
-            var data1 = Event<string>.Create(id, DayOfWeek.Monday, "test1");
-            var data2 = Event<string>.Create(id, DayOfWeek.Tuesday, "test2");
-            var data3 = Event<string>.Create(id, DayOfWeek.Wednesday, "test3");
-            var data4 = Event<string>.Create(id, DayOfWeek.Thursday, "test4");
-            var data5 = Event<string>.Create(id, DayOfWeek.Friday, "test5");
+            var data1 = Event<string>.Create(id, "type", "test1");
+            var data2 = Event<string>.Create(id, "type", "test2");
+            var data3 = Event<string>.Create(id, "type", "test3");
+            var data4 = Event<string>.Create(id, "type", "test4");
+            var data5 = Event<string>.Create(id, "type", "test5");
             var expectedResults = new Event<string>[] { data1, data2, data3, data4, data5 };
             repository.Append(data1);
             repository.Append(data2);

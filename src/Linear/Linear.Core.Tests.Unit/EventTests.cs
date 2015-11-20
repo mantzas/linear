@@ -8,13 +8,13 @@ namespace Linear.Core.Tests.Unit
         [Fact]
         public void Construction_SourceIdEmpty_Throws()
         {
-            Assert.Throws<ArgumentException>("sourceId", () => Event<string>.Create(Guid.Empty, DayOfWeek.Friday, "Test"));
+            Assert.Throws<ArgumentException>("sourceId", () => Event<string>.Create(Guid.Empty, "type", "Test"));
         }
 
         [Fact]
         public void Construction_VersionNegative_Throws()
         {
-            Assert.Throws<ArgumentException>("version", () => Event<string>.Create(Guid.NewGuid(), DayOfWeek.Friday, "Test", -1));
+            Assert.Throws<ArgumentException>("version", () => Event<string>.Create(Guid.NewGuid(), "type", "Test", -1));
         }
     }
 }

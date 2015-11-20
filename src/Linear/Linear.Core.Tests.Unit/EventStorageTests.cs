@@ -34,7 +34,7 @@ namespace Linear.Core.Tests.Unit
         {
             _repository.Append(Arg.Any<IEvent<string>>()).Returns(true);
             var result = new EventStorage<string>(_serializer, _repository).Append(Event<string>.Create(Guid.NewGuid(), 
-                                                                                                        DayOfWeek.Friday, 
+                                                                                                        "type", 
                                                                                                         "test"));
 
             result.Should().BeTrue();
@@ -44,8 +44,8 @@ namespace Linear.Core.Tests.Unit
         public void Append_ReturnsFalse()
         {
             _repository.Append(Arg.Any<IEvent<string>>()).Returns(false);
-            var result = new EventStorage<string>(_serializer, _repository).Append(Event<string>.Create(Guid.NewGuid(), 
-                                                                                                        DayOfWeek.Friday, 
+            var result = new EventStorage<string>(_serializer, _repository).Append(Event<string>.Create(Guid.NewGuid(),
+                                                                                                        "type", 
                                                                                                         "test"));
 
             result.Should().BeFalse();
@@ -65,7 +65,7 @@ namespace Linear.Core.Tests.Unit
         [Fact]
         public void Get_ReturnsFull()
         {
-            var events = new Event<string>[] { Event<string>.Create(Guid.NewGuid(), DayOfWeek.Friday, "test") };
+            var events = new Event<string>[] { Event<string>.Create(Guid.NewGuid(), "type", "test") };
             _repository.Get(Arg.Any<Guid>()).Returns(events);
             var result = new EventStorage<string>(_serializer, _repository).Get(Guid.NewGuid());
 
