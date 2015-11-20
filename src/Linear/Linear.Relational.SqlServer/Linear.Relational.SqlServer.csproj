@@ -43,6 +43,7 @@
     <Compile Include="SqlServerEventRepository.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Linear.Relational.SqlServer.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

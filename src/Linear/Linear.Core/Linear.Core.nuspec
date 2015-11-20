@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata schemaVersion="2">
+    <id>Linear.Core</id>
+    <title>Linear Core</title>
+    <version>1.0</version>
+    <authors>Sotirios Mantziaris</authors>
+    <owners>Sotirios Mantziaris</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A event sourcing data access library</description>
+    <summary>Event Sourcing Data Access</summary>
+    <tags>event sourcing data access</tags>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://github.com/mantzas/linear</projectUrl>
+
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="7.0.1"/>
+    </dependencies>
+
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System"/>
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="bin\Release\Linear.Core.dll" target="lib\net45" />
+    <file src="bin\Release\Linear.Core.pdb" target="lib\net45" />
+  </files>
+</package>

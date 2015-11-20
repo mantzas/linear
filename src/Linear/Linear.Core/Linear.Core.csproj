@@ -51,6 +51,7 @@
     <Compile Include="EventStorage.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Linear.Core.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
