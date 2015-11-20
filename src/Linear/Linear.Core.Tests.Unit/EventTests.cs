@@ -6,9 +6,15 @@ namespace Linear.Core.Tests.Unit
     public class EventTests
     {
         [Fact]
-        public void Construction_Throws()
+        public void Construction_SourceIdEmpty_Throws()
         {
-            Assert.Throws<ArgumentException>("id", () => new Event<string>(Guid.Empty, DayOfWeek.Friday, "Test"));
+            Assert.Throws<ArgumentException>("sourceId", () => Event<string>.Create(Guid.Empty, DayOfWeek.Friday, "Test"));
+        }
+
+        [Fact]
+        public void Construction_VersionNegative_Throws()
+        {
+            Assert.Throws<ArgumentException>("version", () => Event<string>.Create(Guid.NewGuid(), DayOfWeek.Friday, "Test", -1));
         }
     }
 }

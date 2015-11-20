@@ -5,22 +5,34 @@ namespace Linear.Core
 {
     public class Event<T> : IEvent<T> where T : class
     {
-        public Event(Guid id, Enum type, T payload)
+        private Event(Guid sourceId, Enum type, T payload, int version)
         {
-            if(id == Guid.Empty)
+            if(sourceId == Guid.Empty)
             {
-                throw new ArgumentException("Id cannot be empty!","id");
+                throw new ArgumentException("Value cannot be empty!", "sourceId");
             }
 
-            Id = id;
+            if(version < 0)
+            {
+                throw new ArgumentException("Value should be zero or positive!", "version");
+            }
+
+            SourceId = sourceId;
             Type = type;
             Payload = payload;
             Created = DateTimeOffset.UtcNow;
+            Version = version;
         }
 
-        public Guid Id { get; private set; }
+        public Guid SourceId { get; private set; }
         public DateTimeOffset Created { get; private set; }
         public T Payload { get; private set; }
         public Enum Type { get; private set; }
+        public int Version { get; private set; }
+
+        public static Event<T> Create(Guid sourceId, Enum type, T payload, int version = 0)
+        {
+            return new Event<T>(sourceId, type, payload, version);
+        }
     }
 }

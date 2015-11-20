@@ -15,7 +15,7 @@ namespace Linear.Core
             
             lock(SyncLock)
             {
-                if (_db.TryGetValue(data.Id, out queue))
+                if (_db.TryGetValue(data.SourceId, out queue))
                 {
                     queue.Enqueue(data);
                     return true;
@@ -24,7 +24,7 @@ namespace Linear.Core
                 {
                     queue = new Queue<IEvent<T>>();
                     queue.Enqueue(data);
-                    _db.Add(data.Id, queue);
+                    _db.Add(data.SourceId, queue);
                     return true;
                 }
             }
