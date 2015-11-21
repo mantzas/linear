@@ -20,13 +20,11 @@ namespace Linear.Core
                     queue.Enqueue(data);
                     return true;
                 }
-                else
-                {
-                    queue = new Queue<IEvent<T>>();
-                    queue.Enqueue(data);
-                    _db.Add(data.SourceId, queue);
-                    return true;
-                }
+
+                queue = new Queue<IEvent<T>>();
+                queue.Enqueue(data);
+                _db.Add(data.SourceId, queue);
+                return true;
             }
         }
 

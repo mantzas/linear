@@ -8,8 +8,8 @@ namespace Linear.Core.Tests.Unit
 {
     public class EventStorageTests
     {
-        private IEventRepository<string> _repository;
-        private IEventSerializer _serializer;
+        private readonly IEventRepository<string> _repository;
+        private readonly IEventSerializer _serializer;
 
         public EventStorageTests()
         {

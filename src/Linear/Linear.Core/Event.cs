@@ -15,12 +15,12 @@ namespace Linear.Core
         {
             if(sourceId == Guid.Empty)
             {
-                throw new ArgumentException("Value cannot be empty!", "sourceId");
+                throw new ArgumentException("Value cannot be empty!", nameof(sourceId));
             }
 
             if(version < 0)
             {
-                throw new ArgumentException("Value should be zero or positive!", "version");
+                throw new ArgumentException("Value should be zero or positive!", nameof(version));
             }
 
             SourceId = sourceId;

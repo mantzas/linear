@@ -17,12 +17,12 @@ namespace Linear.Relational.SqlServer
         {
             if(connectionFactory == null)
             {
-                throw new ArgumentNullException("connectionFactory");
+                throw new ArgumentNullException(nameof(connectionFactory));
             }
 
             if (eventSerializer == null)
             {
-                throw new ArgumentNullException("eventSerializer");
+                throw new ArgumentNullException(nameof(eventSerializer));
             }
 
             _connectionFactory = connectionFactory;
