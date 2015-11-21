@@ -4,7 +4,7 @@ namespace Linear.Relational.SqlServer.Tests.Integration
 {
     public class SqlServerConnectionFactoryTests : IClassFixture<LocalDbFixture>
     {
-        private LocalDbFixture _fixture;
+        private readonly LocalDbFixture _fixture;
 
         public SqlServerConnectionFactoryTests(LocalDbFixture fixture)
         {
