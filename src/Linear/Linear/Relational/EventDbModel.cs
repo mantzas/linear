@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Linear.Relational.Core
+namespace Linear.Relational
 {
     public class EventDbModel
     {

@@ -1,6 +1,6 @@
 ﻿using System.Data;
 
-namespace Linear.Relational.Core.Contracs
+namespace Linear.Relational.Contracs
 {
     public interface IDbConnectionFactory
     {

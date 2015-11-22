@@ -47,10 +47,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Linear.Relational.Core\Linear.Relational.Core.csproj">
-      <Project>{ce0e70b8-d8d5-4d8a-b63b-faec81af4ead}</Project>
-      <Name>Linear.Relational.Core</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Linear\Linear.csproj">
       <Project>{af670d8f-d3a3-4d04-9fff-9dfe8a24bedc}</Project>
       <Name>Linear</Name>

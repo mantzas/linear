@@ -1,4 +1,4 @@
-﻿using Linear.Relational.Core.Contracs;
+﻿using Linear.Relational.Contracs;
 using System;
 using System.Data;
 using System.Data.SqlClient;

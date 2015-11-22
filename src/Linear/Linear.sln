@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linear.Relational.SqlServer", "Linear.Relational.SqlServer\Linear.Relational.SqlServer.csproj", "{B74919A4-5295-4461-B4A7-9D6682767BE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linear.Relational.Core", "Linear.Relational.Core\Linear.Relational.Core.csproj", "{CE0E70B8-D8D5-4D8A-B63B-FAEC81AF4EAD}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E59EEBD3-BC5D-4A9D-8513-057699AE6E90}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit", "Unit", "{15D46023-5003-4434-9772-6075964FDFA7}"
@@ -31,10 +29,6 @@ Global
 		{B74919A4-5295-4461-B4A7-9D6682767BE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B74919A4-5295-4461-B4A7-9D6682767BE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B74919A4-5295-4461-B4A7-9D6682767BE2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CE0E70B8-D8D5-4D8A-B63B-FAEC81AF4EAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CE0E70B8-D8D5-4D8A-B63B-FAEC81AF4EAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CE0E70B8-D8D5-4D8A-B63B-FAEC81AF4EAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CE0E70B8-D8D5-4D8A-B63B-FAEC81AF4EAD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C056A564-D7C9-4E46-B004-E24C50C0182B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C056A564-D7C9-4E46-B004-E24C50C0182B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C056A564-D7C9-4E46-B004-E24C50C0182B}.Release|Any CPU.ActiveCfg = Release|Any CPU

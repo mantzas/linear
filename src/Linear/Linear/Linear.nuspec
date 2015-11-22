@@ -19,6 +19,7 @@
 
     <frameworkAssemblies>
       <frameworkAssembly assemblyName="System"/>
+      <frameworkAssembly assemblyName="System.Data"/>
     </frameworkAssemblies>
   </metadata>
   <files>
