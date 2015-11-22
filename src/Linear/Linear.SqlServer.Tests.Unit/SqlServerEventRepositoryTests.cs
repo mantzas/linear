@@ -1,9 +1,10 @@
 ﻿using Linear.Relational.Contracs;
+using Linear.Relational.SqlServer;
 using NSubstitute;
 using System;
 using Xunit;
 
-namespace Linear.Relational.SqlServer.Tests.Unit
+namespace Linear.SqlServer.Tests.Unit
 {
     public class SqlServerEventRepositoryTests
     {

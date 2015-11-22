@@ -1,7 +1,7 @@
 ﻿using System;
 using Xunit;
 
-namespace Linear.Relational.SqlServer.Tests.Unit
+namespace Linear.SqlServer.Tests.Unit
 {
     public class SqlServerConnectionFactoryTests 
     {

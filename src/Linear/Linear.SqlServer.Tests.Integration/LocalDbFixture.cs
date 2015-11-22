@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace Linear.Relational.SqlServer.Tests.Integration
+namespace Linear.SqlServer.Tests.Integration
 {
     public class LocalDbFixture : IDisposable
     {

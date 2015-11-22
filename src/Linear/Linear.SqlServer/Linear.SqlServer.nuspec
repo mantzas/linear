@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata schemaVersion="2">
-    <id>Linear.Relational.SqlServer</id>
-    <title>Linear Relational SqlServer</title>
+    <id>Linear.SqlServer</id>
+    <title>Linear SqlServer</title>
     <version>1.0</version>
     <authors>Sotirios Mantziaris</authors>
     <owners>Sotirios Mantziaris</owners>
@@ -24,7 +24,7 @@
     </frameworkAssemblies>
   </metadata>
   <files>
-    <file src="bin\Release\Linear.Relational.SqlServer.dll" target="lib\net45" />
-    <file src="bin\Release\Linear.Relational.SqlServer.pdb" target="lib\net45" />
+    <file src="bin\Release\Linear.SqlServer.dll" target="lib\net45" />
+    <file src="bin\Release\Linear.SqlServer.pdb" target="lib\net45" />
   </files>
 </package>

@@ -3,7 +3,7 @@ using System;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace Linear.Relational.SqlServer
+namespace Linear.SqlServer
 {
     public class SqlServerConnectionFactory : IDbConnectionFactory
     {

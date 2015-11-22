@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 using System.IO;
 using System.Reflection;
 
-namespace Linear.Relational.SqlServer.Tests.Integration
+namespace Linear.SqlServer.Tests.Integration
 {
     public class LocalDb : IDisposable
     {

@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7BD8AAF5-67F2-424A-A39F-5D0D602835ED}</ProjectGuid>
+    <ProjectGuid>{B89C16D9-C2B6-44BF-806E-3A5DB264B496}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Linear.Relational.SqlServer.Tests.Unit</RootNamespace>
-    <AssemblyName>Linear.Relational.SqlServer.Tests.Unit</AssemblyName>
+    <RootNamespace>Linear.SqlServer.Tests.Unit</RootNamespace>
+    <AssemblyName>Linear.SqlServer.Tests.Unit</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -48,8 +48,6 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Xml" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
       <HintPath>..\packages\xunit.abstractions.2.0.0\lib\net35\xunit.abstractions.dll</HintPath>
       <Private>True</Private>
@@ -76,17 +74,17 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
-    <Compile Include="SqlServerConnectionFactoryTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerConnectionFactoryTests.cs" />
     <Compile Include="SqlServerEventRepositoryTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Linear.Relational.SqlServer\Linear.Relational.SqlServer.csproj">
-      <Project>{b74919a4-5295-4461-b4a7-9d6682767be2}</Project>
-      <Name>Linear.Relational.SqlServer</Name>
+    <ProjectReference Include="..\Linear.SqlServer\Linear.SqlServer.csproj">
+      <Project>{1eebf8f4-217e-41a3-800a-fba5698b7ac0}</Project>
+      <Name>Linear.SqlServer</Name>
     </ProjectReference>
     <ProjectReference Include="..\Linear\Linear.csproj">
       <Project>{af670d8f-d3a3-4d04-9fff-9dfe8a24bedc}</Project>

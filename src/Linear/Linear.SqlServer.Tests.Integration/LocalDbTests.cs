@@ -1,7 +1,7 @@
 ﻿using FluentAssertions;
 using Xunit;
 
-namespace Linear.Relational.SqlServer.Tests.Integration
+namespace Linear.SqlServer.Tests.Integration
 {
     public class LocalDbTests
     {

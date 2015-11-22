@@ -1,9 +1,10 @@
 ﻿using FluentAssertions;
+using Linear.Relational.SqlServer;
 using System;
 using System.Collections.Generic;
 using Xunit;
 
-namespace Linear.Relational.SqlServer.Tests.Integration
+namespace Linear.SqlServer.Tests.Integration
 {
     public class SqlServerEventRepositoryTests : IDisposable
     {

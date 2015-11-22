@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B74919A4-5295-4461-B4A7-9D6682767BE2}</ProjectGuid>
+    <ProjectGuid>{1EEBF8F4-217E-41A3-800A-FBA5698B7AC0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Linear.Relational.SqlServer</RootNamespace>
-    <AssemblyName>Linear.Relational.SqlServer</AssemblyName>
+    <RootNamespace>Linear.SqlServer</RootNamespace>
+    <AssemblyName>Linear.SqlServer</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -43,14 +43,14 @@
     <Compile Include="SqlServerEventRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Linear.Relational.SqlServer.nuspec" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Linear\Linear.csproj">
       <Project>{af670d8f-d3a3-4d04-9fff-9dfe8a24bedc}</Project>
       <Name>Linear</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Linear.SqlServer.nuspec" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
