@@ -15,7 +15,6 @@
 
     <dependencies>
       <dependency id="Linear" version="1.0.0"/>
-      <dependency id="Linear.Relational.Core" version="1.0.0"/>
       <dependency id="Dapper" version="1.42"/>
     </dependencies>
 
