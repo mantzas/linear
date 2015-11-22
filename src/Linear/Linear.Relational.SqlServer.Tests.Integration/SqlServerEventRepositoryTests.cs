@@ -1,5 +1,4 @@
 ﻿using FluentAssertions;
-using Linear.Core;
 using System;
 using System.Collections.Generic;
 using Xunit;

@@ -1,7 +1,7 @@
-﻿using Linear.Core.Contracts;
+﻿using Linear.Contracts;
 using System;
 
-namespace Linear.Core
+namespace Linear
 {
     public class Event<T> : IEvent<T> where T : class
     {

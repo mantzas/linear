@@ -1,4 +1,4 @@
-﻿namespace Linear.Core.Contracts
+﻿namespace Linear.Contracts
 {
     public interface IEventSerializer
     {

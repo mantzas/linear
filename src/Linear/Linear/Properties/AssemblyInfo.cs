@@ -1,11 +1,11 @@
 ﻿using System.Reflection;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("Linear.Core")]
+[assembly: AssemblyTitle("Linear")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Bitusion")]
-[assembly: AssemblyProduct("Linear.Core")]
+[assembly: AssemblyProduct("Linear")]
 [assembly: AssemblyCopyright("Copyright © Bitusion 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

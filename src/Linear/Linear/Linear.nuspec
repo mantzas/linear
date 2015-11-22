@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata schemaVersion="2">
-    <id>Linear.Core</id>
-    <title>Linear Core</title>
+    <id>Linear</id>
+    <title>Linear</title>
     <version>1.0</version>
     <authors>Sotirios Mantziaris</authors>
     <owners>Sotirios Mantziaris</owners>
@@ -22,7 +22,7 @@
     </frameworkAssemblies>
   </metadata>
   <files>
-    <file src="bin\Release\Linear.Core.dll" target="lib\net45" />
-    <file src="bin\Release\Linear.Core.pdb" target="lib\net45" />
+    <file src="bin\Release\Linear.dll" target="lib\net45" />
+    <file src="bin\Release\Linear.pdb" target="lib\net45" />
   </files>
 </package>

@@ -1,10 +1,9 @@
 ﻿using System;
 using Dapper;
-using Linear.Core.Contracts;
 using Linear.Relational.Core.Contracs;
 using Linear.Relational.Core;
 using System.Collections.Generic;
-using Linear.Core;
+using Linear.Contracts;
 
 namespace Linear.Relational.SqlServer
 {

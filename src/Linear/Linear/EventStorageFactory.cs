@@ -1,16 +1,16 @@
-﻿using Linear.Core.Contracts;
+﻿using Linear.Contracts;
 using System;
 
-namespace Linear.Core
+namespace Linear
 {
-    public class EventStorage<T> : IEventStorage<T> where T:class
+    public class EventStorageFactory<T> : IEventStorageFactory<T> where T:class
     {
         private readonly IEventSerializer _serializer;
         private readonly IEventRepository<T> _repository;
 
-        public EventStorage(IEventSerializer serializer, IEventRepository<T> repository)
+        public EventStorageFactory(IEventSerializer serializer, IEventRepository<T> repository)
         {
-            if(serializer == null)
+            if (serializer == null)
             {
                 throw new ArgumentNullException(nameof(serializer));
             }
@@ -24,14 +24,9 @@ namespace Linear.Core
             _repository = repository;
         }
 
-        public bool Append(IEvent<T> data)
+        public IEventStorage<T> Create()
         {
-            return _repository.Append(data);
-        }
-
-        public IEvent<T>[] Get(Guid id)
-        {
-            return _repository.Get(id);
+            return new EventStorage<T>(_serializer, _repository);
         }
     }
 }

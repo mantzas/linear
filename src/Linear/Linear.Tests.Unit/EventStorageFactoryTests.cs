@@ -1,10 +1,10 @@
 ﻿using System;
 using Xunit;
 using FluentAssertions;
-using Linear.Core.Contracts;
 using NSubstitute;
+using Linear.Contracts;
 
-namespace Linear.Core.Tests.Unit
+namespace Linear.Tests.Unit
 {
     public class EventStorageFactoryTests
     {

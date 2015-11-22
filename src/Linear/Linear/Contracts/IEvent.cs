@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Linear.Core.Contracts
+namespace Linear.Contracts
 {
     public interface IEvent<T> where T:class
     {

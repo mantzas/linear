@@ -1,7 +1,7 @@
-﻿using Linear.Core.Contracts;
+﻿using Linear.Contracts;
 using Newtonsoft.Json;
 
-namespace Linear.Core
+namespace Linear
 {
     public class JsonEventSerializer : IEventSerializer
     {

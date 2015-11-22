@@ -1,8 +1,8 @@
-﻿using Linear.Core.Contracts;
+﻿using Linear.Contracts;
 using System;
 using System.Collections.Generic;
 
-namespace Linear.Core
+namespace Linear
 {
     public class InMemoryEventRepository<T> : IEventRepository<T> where T : class
     {

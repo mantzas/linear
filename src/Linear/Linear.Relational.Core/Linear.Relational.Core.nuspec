@@ -14,7 +14,7 @@
     <projectUrl>https://github.com/mantzas/linear</projectUrl>
 
     <dependencies>
-      <dependency id="Linear.Core" version="1.0.0"/>
+      <dependency id="Linear" version="1.0.0"/>
     </dependencies>
 
     <frameworkAssemblies>

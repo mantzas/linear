@@ -6,8 +6,8 @@
     <ProjectGuid>{69BF4553-1172-4026-BA88-1CBB8AE00A33}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Linear.Core.Tests.Unit</RootNamespace>
-    <AssemblyName>Linear.Core.Tests.Unit</AssemblyName>
+    <RootNamespace>Linear.Tests.Unit</RootNamespace>
+    <AssemblyName>Linear.Tests.Unit</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -89,9 +89,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Linear.Core\Linear.Core.csproj">
+    <ProjectReference Include="..\Linear\Linear.csproj">
       <Project>{af670d8f-d3a3-4d04-9fff-9dfe8a24bedc}</Project>
-      <Name>Linear.Core</Name>
+      <Name>Linear</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

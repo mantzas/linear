@@ -2,7 +2,7 @@
 using System;
 using Xunit;
 
-namespace Linear.Core.Tests.Unit
+namespace Linear.Tests.Unit
 {
     public class InMemoryEventRepositoryTests
     {

@@ -39,12 +39,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Linear.Core\Linear.Core.csproj">
-      <Project>{af670d8f-d3a3-4d04-9fff-9dfe8a24bedc}</Project>
-      <Name>Linear.Core</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Linear.Relational.Core.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
