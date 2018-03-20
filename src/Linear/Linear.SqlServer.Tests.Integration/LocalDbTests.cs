@@ -12,7 +12,6 @@ namespace Linear.SqlServer.Tests.Integration
             {
                 localDb.ConnectionStringName.Should().NotBeNullOrWhiteSpace();
             }
-
         }
     }
 }
